@@ -3,4 +3,10 @@ def show_cities():
     with open("cities.txt", encoding="utf-8") as cities:
         print(cities.read())
 
-show_cities()
+#conta o numero de linhas do arquivo cities
+def count_lines():
+    with open("cities.txt", encoding="utf-8") as cities:
+        print(len(cities.readlines()))
+        
+
+count_lines()
